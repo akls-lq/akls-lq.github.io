@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akilis Le Quellec — Portfolio</title>
+  <meta name="description" content="Portfolio d'Akilis Le Quellec — développement, data, IA, business, finance et prise de parole." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar glass">
+      <a class="brand" href="#home">AKILIS</a>
+      <nav>
+        <a href="#about" data-i18n="nav_about">À propos</a>
+        <a href="#facets" data-i18n="nav_facets">Mes 3 facettes</a>
+        <a href="#experience" data-i18n="nav_experience">Expériences</a>
+        <a href="#projects" data-i18n="nav_projects">Projets</a>
+        <a href="#certifications" data-i18n="nav_certifications">Certifications</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <button id="langToggle" class="lang-toggle" aria-label="Basculer la langue">FR / EN</button>
+    </header>
+
+    <section id="home" class="hero">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="assets/intro-video.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content glass">
+        <p class="eyebrow" data-i18n="hero_eyebrow">Portfolio interactif</p>
+        <h1 data-i18n="hero_title">Akilis Le Quellec</h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">Développeur • Data • IA • Finance • Business</p>
+        <p class="hero-text" data-i18n="hero_text">
+          Un profil hybride entre technologie, analyse, finance, communication et performance.
+        </p>
+        <div class="hero-actions">
+          <button id="printCvButton" class="primary-btn" data-i18n="hero_print">Faire sortir le CV</button>
+          <a class="secondary-btn" href="#about" data-i18n="hero_discover">Découvrir le portfolio</a>
+        </div>
+      </div>
+
+      <div id="cvSheet" class="cv-sheet" aria-hidden="true">
+        <div class="cv-paper">
+          <p class="cv-mini-title" data-i18n="cv_card_title">CV public</p>
+          <h3>Akilis Le Quellec</h3>
+          <p data-i18n="cv_card_subtitle">Version publique à venir</p>
+          <ul>
+            <li data-i18n="cv_card_l1">Étudiant à ICN Business School & 42 Paris</li>
+            <li data-i18n="cv_card_l2">Développement • Data • IA • Finance</li>
+            <li data-i18n="cv_card_l3">Le PDF définitif sera ajouté plus tard</li>
+          </ul>
+          <button class="ghost-btn" disabled data-i18n="cv_card_button">CV bientôt disponible</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="main-content">
+      <section id="about" class="section about">
+        <div class="section-head">
+          <p class="section-kicker" data-i18n="about_kicker">À propos</p>
+          <h2 data-i18n="about_title">Un profil construit à l’intersection du code, de la finance et de la communication.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p data-i18n="about_p1">
+              Je suis étudiant à ICN Business School & 42 Paris, avec un profil hybride mêlant développement, data, intelligence artificielle, finance, business et prise de parole.
+            </p>
+            <p data-i18n="about_p2">
+              J’aime transformer des idées en projets concrets : concevoir, tester, présenter et faire évoluer des solutions utiles.
+            </p>
+            <div class="chips">
+              <span>Python</span>
+              <span>C</span>
+              <span>Shell</span>
+              <span>Git</span>
+              <span>42 Paris</span>
+              <span>Finance & Contrôle</span>
+              <span>Hackathons</span>
+            </div>
+          </div>
+          <div class="portrait-card">
+            <img src="assets/profile-photo.png" alt="Portrait d'Akilis Le Quellec" />
+          </div>
+        </div>
+      </section>
+
+      <section id="facets" class="section">
+        <div class="section-head">
+          <p class="section-kicker" data-i18n="facets_kicker">Mes 3 facettes</p>
+          <h2 data-i18n="facets_title">Trois dimensions complémentaires de mon profil.</h2>
+        </div>
+        <div class="facets-grid">
+          <article class="facet-card">
+            <span class="facet-index">01</span>
+            <h3 data-i18n="facet1_title">Développeur • Data • IA</h3>
+            <p data-i18n="facet1_text">
+              42 Paris, Python, C, Shell, Git, data engineering, IA appliquée, hackathons et construction de produits utiles.
+            </p>
+          </article>
+          <article class="facet-card">
+            <span class="facet-index">02</span>
+            <h3 data-i18n="facet2_title">Business • Finance • Commercial</h3>
+            <p data-i18n="facet2_text">
+              ICN Business School, finance & contrôle, analyse, admissions, coordination, relation humaine et compréhension business.
+            </p>
+          </article>
+          <article class="facet-card">
+            <span class="facet-index">03</span>
+            <h3 data-i18n="facet3_title">Image • Réseaux sociaux • Personal branding</h3>
+            <p data-i18n="facet3_text">
+              Une facette en construction : prise de parole, image publique, création de contenu et présence à venir sur les réseaux sociaux.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="journey" class="section timeline">
+        <div class="section-head">
+          <p class="section-kicker" data-i18n="journey_kicker">Parcours</p>
+          <h2 data-i18n="journey_title">Un parcours entre business school, excellence académique et culture internationale.</h2>
+        </div>
+        <div class="timeline-list">
+          <div class="timeline-item">
+            <span class="timeline-year">2026 — 2028</span>
+            <div>
+              <h3>ICN Business School</h3>
+              <p data-i18n="journey_icn">PGE — Spécialisation en Finance & Contrôle.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2026 — aujourd’hui</span>
+            <div>
+              <h3>42 Paris</h3>
+              <p data-i18n="journey_42">Informatique — Top 10 %, C, Shell, algorithmique et Python.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2025</span>
+            <div>
+              <h3>Pontifícia Universidade Católica do Paraná</h3>
+              <p data-i18n="journey_pucpr">Échange universitaire au Brésil : stratégie, management de l’innovation, entrepreneuriat, conception organisationnelle et portugais.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-head">
+          <p class="section-kicker" data-i18n="exp_kicker">Expériences & engagements</p>
+          <h2 data-i18n="exp_title">Des expériences variées, entre analyse, coordination, terrain et engagement associatif.</h2>
+        </div>
+        <div class="experience-grid">
+          <article class="exp-card">
+            <h3>Région Île-de-France</h3>
+            <p class="exp-role" data-i18n="exp1_role">Assistant Pilotage Financier | Fonds européens — Stage</p>
+            <p data-i18n="exp1_text">Développement d’une macro Excel pour automatiser le traitement des CSF et fiabiliser l’extraction des données financières.</p>
+          </article>
+          <article class="exp-card">
+            <h3>IFFP</h3>
+            <p class="exp-role" data-i18n="exp2_role">Assistant admissions — Stage</p>
+            <p data-i18n="exp2_text">Réalisation d’entretiens d’admission avec des candidats nationaux et internationaux et émission d’attestations d’inscription pour différents campus.</p>
+          </article>
+          <article class="exp-card">
+            <h3>ANIMATE ICN</h3>
+            <p class="exp-role" data-i18n="exp3_role">Vice-président</p>
+            <p data-i18n="exp3_text">Coordination locale des actions associatives entre les campus de Paris et Nancy et garantie de la cohérence des projets sur plusieurs sites.</p>
+          </article>
+          <article class="exp-card">
+            <h3>Les Restos du Cœur</h3>
+            <p class="exp-role" data-i18n="exp4_role">Bénévole</p>
+            <p data-i18n="exp4_text">Engagement associatif dans l’aide humanitaire.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="section-head">
+          <p class="section-kicker" data-i18n="projects_kicker">Projets</p>
+          <h2 data-i18n="projects_title">Des projets qui reflètent mes différentes facettes.</h2>
+        </div>
+        <div class="project-card featured">
+          <div class="project-copy">
+            <p class="project-tag">Hackathon • FINAXYS × Mistral AI</p>
+            <h3>SOLEN</h3>
+            <p data-i18n="solen_text">
+              Prototype de solution de vigilance contre les fraudes par e-mail, développé en équipe lors d’un hackathon. Mon rôle : création, tests et présentation (speech), aux côtés de mon groupe.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/akls-lq/Solen" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://solen-demo.vercel.app/" target="_blank" rel="noopener">Démo</a>
+            </div>
+          </div>
+          <div class="project-media">
+            <img src="assets/solen-presentation.jpg" alt="Akilis présentant SOLEN" />
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-copy">
+            <p class="project-tag">Finance • Challenge</p>
+            <h3>Next Challenge</h3>
+            <p data-i18n="next_text">
+              Gestion de portefeuille et mise en pratique d’une logique d’analyse et de décision dans un contexte financier.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section">
+        <div class="section-head">
+          <p class="section-kicker" data-i18n="cert_kicker">Certifications & distinctions</p>
+          <h2 data-i18n="cert_title">Une vitrine 3D pour les acquis académiques, techniques et personnels.</h2>
+        </div>
+        <div class="cert-grid">
+          <article class="cert-card">
+            <div class="cert-card-inner">
+              <div class="cert-front">
+                <p class="cert-org">Yale University</p>
+                <h3>Financial Markets</h3>
+                <p data-i18n="cert1_date">Émise en octobre 2026</p>
+              </div>
+              <div class="cert-back">
+                <p>ID : Z2IX6VKNSQ48</p>
+                <a href="https://coursera.org/verify/Z2IX6VKNSQ48" target="_blank" rel="noopener">Vérifier</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card-inner">
+              <div class="cert-front">
+                <p class="cert-org">Corporate Finance Institute</p>
+                <h3>Data Skills for Excel Professionals</h3>
+                <p data-i18n="cert2_date">Émise en septembre 2026</p>
+              </div>
+              <div class="cert-back">
+                <p>ID : 3RF9BTGAFSVJ</p>
+                <p data-i18n="cert2_desc">Spécialisation en analyse de données pour Excel.</p>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card distinction">
+            <div class="cert-card-inner">
+              <div class="cert-front">
+                <p class="cert-org">Distinction sportive</p>
+                <h3 data-i18n="jjb_title">1re place — championnat du Sud du Brésil</h3>
+                <p>CBJJE</p>
+              </div>
+              <div class="cert-back">
+                <img src="assets/jjb-podium.jpg" alt="Podium JJB d'Akilis" />
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="section-head">
+          <p class="section-kicker" data-i18n="gallery_kicker">Moments forts</p>
+          <h2 data-i18n="gallery_title">Prise de parole, performance et identité personnelle.</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item wide">
+            <img src="assets/solen-presentation.jpg" alt="Présentation de SOLEN" />
+            <figcaption data-i18n="gallery_1">Présentation de SOLEN devant un public.</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/profile-photo.png" alt="Photo professionnelle d'Akilis" />
+            <figcaption data-i18n="gallery_2">Portrait professionnel.</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/jjb-podium.jpg" alt="Podium jiu-jitsu brésilien" />
+            <figcaption data-i18n="gallery_3">1re place au championnat du Sud du Brésil.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="social" class="section social-coming">
+        <div class="section-head">
+          <p class="section-kicker" data-i18n="social_kicker">Bientôt sur les réseaux</p>
+          <h2 data-i18n="social_title">Une présence en ligne en construction autour de la tech, du business, des hackathons et de mon parcours personnel.</h2>
+        </div>
+        <div class="social-grid">
+          <div class="social-box">Instagram</div>
+          <div class="social-box">TikTok</div>
+          <div class="social-box">YouTube</div>
+          <div class="social-box">Snapchat</div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-head">
+          <p class="section-kicker" data-i18n="contact_kicker">Contact</p>
+          <h2 data-i18n="contact_title">Restons en contact.</h2>
+        </div>
+        <div class="contact-card">
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/akilis-le-quellec/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/akls-lq" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:akilis.leq@gmail.com">akilis.leq@gmail.com</a>
+          </div>
+          <p data-i18n="contact_note">Le CV public téléchargeable sera ajouté dès qu’il sera prêt.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
